@@ -1,0 +1,526 @@
+[
+{
+    "model": "shop.region",
+    "pk": 1,
+    "fields": {
+        "base_vat": "12.50",
+        "name": "EU"
+    }
+},
+{
+    "model": "shop.region",
+    "pk": 2,
+    "fields": {
+        "base_vat": "10.00",
+        "name": "USA"
+    }
+},
+{
+    "model": "shop.country",
+    "pk": 1,
+    "fields": {
+        "base_vat": "15.00",
+        "currency": "\u20ac",
+        "name": "Germany",
+        "region": 1
+    }
+},
+{
+    "model": "shop.country",
+    "pk": 2,
+    "fields": {
+        "base_vat": null,
+        "currency": "\u00a3",
+        "name": "UK",
+        "region": 1
+    }
+},
+{
+    "model": "shop.country",
+    "pk": 3,
+    "fields": {
+        "base_vat": "12.50",
+        "currency": "$",
+        "name": "Texas",
+        "region": 2
+    }
+},
+{
+    "model": "shop.country",
+    "pk": 5,
+    "fields": {
+        "base_vat": "11.00",
+        "currency": "$",
+        "name": "Colorado",
+        "region": 2
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 1,
+    "fields": {
+        "name": "Eggs",
+        "base_vat": null,
+        "band1_vat": "0.00",
+        "band2_vat": null,
+        "band3_vat": null,
+        "band1_price_range": "1.00",
+        "band2_price_range": null,
+        "price": "4.00",
+        "country": [
+            1
+        ]
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 2,
+    "fields": {
+        "name": "Wine",
+        "base_vat": "20.00",
+        "band1_vat": null,
+        "band2_vat": null,
+        "band3_vat": null,
+        "band1_price_range": null,
+        "band2_price_range": null,
+        "price": "15.00",
+        "country": [
+            1
+        ]
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 3,
+    "fields": {
+        "name": "Beer",
+        "base_vat": null,
+        "band1_vat": "0.00",
+        "band2_vat": null,
+        "band3_vat": null,
+        "band1_price_range": "1.00",
+        "band2_price_range": null,
+        "price": "3.00",
+        "country": [
+            3
+        ]
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 4,
+    "fields": {
+        "name": "Bread",
+        "base_vat": "0.05",
+        "band1_vat": null,
+        "band2_vat": null,
+        "band3_vat": null,
+        "band1_price_range": null,
+        "band2_price_range": null,
+        "price": "2.00",
+        "country": [
+            3
+        ]
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 5,
+    "fields": {
+        "name": "Milk",
+        "base_vat": "5.00",
+        "band1_vat": null,
+        "band2_vat": "0.00",
+        "band3_vat": null,
+        "band1_price_range": "2.00",
+        "band2_price_range": null,
+        "price": "1.50",
+        "country": [
+            5
+        ]
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 6,
+    "fields": {
+        "name": "Bread",
+        "base_vat": "5.00",
+        "band1_vat": null,
+        "band2_vat": null,
+        "band3_vat": null,
+        "band1_price_range": null,
+        "band2_price_range": null,
+        "price": "2.00",
+        "country": [
+            5
+        ]
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 7,
+    "fields": {
+        "name": "Eggs",
+        "base_vat": null,
+        "band1_vat": "12.50",
+        "band2_vat": "15.00",
+        "band3_vat": "20.00",
+        "band1_price_range": "20.00",
+        "band2_price_range": "100.00",
+        "price": "2.50",
+        "country": [
+            2
+        ]
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 8,
+    "fields": {
+        "name": "Wine",
+        "base_vat": "10.00",
+        "band1_vat": null,
+        "band2_vat": null,
+        "band3_vat": null,
+        "band1_price_range": null,
+        "band2_price_range": null,
+        "price": "12.00",
+        "country": [
+            2
+        ]
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$30000$MhPAp8XYoIJo$cE/82+kjOYxRVSgv/YlUEaEUJu4gnq0/OB4jD9MZS+Y=",
+        "last_login": "2018-02-13T14:22:33.960Z",
+        "is_superuser": true,
+        "username": "davidfelce",
+        "first_name": "",
+        "last_name": "",
+        "email": "davefelce@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2018-02-13T14:22:28.901Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "t209ri96fpw24dy9fycil0xd5onxea1e",
+    "fields": {
+        "session_data": "MDYxZWNiNWRhMDhkYWNkZmQyM2E3ZmIxZDEyNzFmNzUwZWMwMDU3Mzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6IjEiLCJfYXV0aF91c2VyX2hhc2giOiI3Mzc0NGU4NWQ1NjQ1YmU0NGMzOWYwZGQyYWI1NTc5YTFkY2YwYWU3In0=",
+        "expire_date": "2018-02-27T14:22:33.966Z"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2018-02-13T14:38:40.643Z",
+        "user": [
+            "davidfelce"
+        ],
+        "content_type": [
+            "shop",
+            "region"
+        ],
+        "object_id": "1",
+        "object_repr": "EU",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2018-02-13T14:39:17.763Z",
+        "user": [
+            "davidfelce"
+        ],
+        "content_type": [
+            "shop",
+            "region"
+        ],
+        "object_id": "2",
+        "object_repr": "USA",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2018-02-13T14:41:00.494Z",
+        "user": [
+            "davidfelce"
+        ],
+        "content_type": [
+            "shop",
+            "country"
+        ],
+        "object_id": "1",
+        "object_repr": "Germany",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2018-02-13T14:42:25.562Z",
+        "user": [
+            "davidfelce"
+        ],
+        "content_type": [
+            "shop",
+            "country"
+        ],
+        "object_id": "2",
+        "object_repr": "UK",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2018-02-13T14:45:13.297Z",
+        "user": [
+            "davidfelce"
+        ],
+        "content_type": [
+            "shop",
+            "country"
+        ],
+        "object_id": "3",
+        "object_repr": "Texas",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2018-02-13T14:45:23.757Z",
+        "user": [
+            "davidfelce"
+        ],
+        "content_type": [
+            "shop",
+            "country"
+        ],
+        "object_id": "4",
+        "object_repr": "Alaska",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2018-02-13T14:48:43.830Z",
+        "user": [
+            "davidfelce"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "1",
+        "object_repr": "Eggs",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2018-02-13T14:52:01.691Z",
+        "user": [
+            "davidfelce"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "2",
+        "object_repr": "Wine",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2018-02-13T14:54:20.572Z",
+        "user": [
+            "davidfelce"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "3",
+        "object_repr": "Beer",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2018-02-13T14:55:04.080Z",
+        "user": [
+            "davidfelce"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "4",
+        "object_repr": "Bread",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2018-02-13T14:56:22.305Z",
+        "user": [
+            "davidfelce"
+        ],
+        "content_type": [
+            "shop",
+            "country"
+        ],
+        "object_id": "4",
+        "object_repr": "Alaska",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2018-02-13T14:57:26.860Z",
+        "user": [
+            "davidfelce"
+        ],
+        "content_type": [
+            "shop",
+            "country"
+        ],
+        "object_id": "5",
+        "object_repr": "Colorado",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2018-02-13T15:04:09.826Z",
+        "user": [
+            "davidfelce"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "5",
+        "object_repr": "Milk",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2018-02-13T15:05:34.143Z",
+        "user": [
+            "davidfelce"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "6",
+        "object_repr": "Bread",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2018-02-13T15:11:44.917Z",
+        "user": [
+            "davidfelce"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "7",
+        "object_repr": "Eggs",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2018-02-13T15:13:57.564Z",
+        "user": [
+            "davidfelce"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "7",
+        "object_repr": "Eggs",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"band3_vat\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2018-02-13T15:15:02.331Z",
+        "user": [
+            "davidfelce"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "8",
+        "object_repr": "Wine",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]
