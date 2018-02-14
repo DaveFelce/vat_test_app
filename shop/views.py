@@ -12,6 +12,7 @@ class TestPage(View):
 
     def get(self, request):
 
-        product = Product()
-        vat = product.vat_for_product_by_country(product_name='Wine', country_name='UK', price=100)
-        return render(request, 'shop/index.html', {'vat': vat})
+        product = Product.objects.get(name='Wine', country__name='Germany')
+        vat = product.vat_for_product_by_country(price=200)
+        currency_symbol = product.country.currency
+        return render(request, 'shop/index.html', {'currency_symbol': currency_symbol, 'price': 200, 'vat': vat})

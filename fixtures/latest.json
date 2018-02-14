@@ -19,9 +19,9 @@
     "model": "shop.country",
     "pk": 1,
     "fields": {
-        "base_vat": "15.00",
-        "currency": "\u20ac",
-        "name": "Germany",
+        "base_vat": null,
+        "currency": "\u00a3",
+        "name": "UK",
         "region": 1
     }
 },
@@ -29,9 +29,9 @@
     "model": "shop.country",
     "pk": 2,
     "fields": {
-        "base_vat": null,
-        "currency": "\u00a3",
-        "name": "UK",
+        "base_vat": "15.00",
+        "currency": "\u20ac",
+        "name": "Germany",
         "region": 1
     }
 },
@@ -47,7 +47,7 @@
 },
 {
     "model": "shop.country",
-    "pk": 5,
+    "pk": 4,
     "fields": {
         "base_vat": "11.00",
         "currency": "$",
@@ -59,169 +59,161 @@
     "model": "shop.product",
     "pk": 1,
     "fields": {
-        "name": "Eggs",
-        "base_vat": null,
-        "band1_vat": "0.00",
+        "country": 2,
+        "name": "Bread",
+        "base_vat": "12.50",
+        "flat_vat": null,
+        "first_tax_free_amount": "1.00",
+        "band1_vat": null,
         "band2_vat": null,
         "band3_vat": null,
-        "band1_price_range": "1.00",
-        "band2_price_range": null,
-        "price": "4.00",
-        "country": [
-            1
-        ]
+        "band1_price_range": null,
+        "band2_price_range": null
     }
 },
 {
     "model": "shop.product",
     "pk": 2,
     "fields": {
+        "country": 2,
         "name": "Wine",
         "base_vat": "20.00",
+        "flat_vat": null,
+        "first_tax_free_amount": null,
         "band1_vat": null,
         "band2_vat": null,
         "band3_vat": null,
         "band1_price_range": null,
-        "band2_price_range": null,
-        "price": "15.00",
-        "country": [
-            1
-        ]
+        "band2_price_range": null
     }
 },
 {
     "model": "shop.product",
     "pk": 3,
     "fields": {
-        "name": "Beer",
+        "country": 1,
+        "name": "Bread",
         "base_vat": null,
-        "band1_vat": "0.00",
-        "band2_vat": null,
-        "band3_vat": null,
-        "band1_price_range": "1.00",
-        "band2_price_range": null,
-        "price": "3.00",
-        "country": [
-            3
-        ]
+        "flat_vat": null,
+        "first_tax_free_amount": null,
+        "band1_vat": "12.50",
+        "band2_vat": "15.00",
+        "band3_vat": "20.00",
+        "band1_price_range": "20.00",
+        "band2_price_range": "100.00"
     }
 },
 {
     "model": "shop.product",
     "pk": 4,
     "fields": {
-        "name": "Bread",
-        "base_vat": "0.05",
+        "country": 1,
+        "name": "Wine",
+        "base_vat": "10.00",
+        "flat_vat": null,
+        "first_tax_free_amount": null,
         "band1_vat": null,
         "band2_vat": null,
         "band3_vat": null,
         "band1_price_range": null,
-        "band2_price_range": null,
-        "price": "2.00",
-        "country": [
-            3
-        ]
+        "band2_price_range": null
     }
 },
 {
     "model": "shop.product",
     "pk": 5,
     "fields": {
-        "name": "Milk",
-        "base_vat": "5.00",
-        "band1_vat": null,
-        "band2_vat": "0.00",
+        "country": 3,
+        "name": "Beer",
+        "base_vat": "10.00",
+        "flat_vat": null,
+        "first_tax_free_amount": null,
+        "band1_vat": "0.00",
+        "band2_vat": null,
         "band3_vat": null,
-        "band1_price_range": "2.00",
-        "band2_price_range": null,
-        "price": "1.50",
-        "country": [
-            5
-        ]
+        "band1_price_range": "1.00",
+        "band2_price_range": null
     }
 },
 {
     "model": "shop.product",
     "pk": 6,
     "fields": {
+        "country": 3,
         "name": "Bread",
-        "base_vat": "5.00",
+        "base_vat": null,
+        "flat_vat": "0.05",
+        "first_tax_free_amount": null,
         "band1_vat": null,
         "band2_vat": null,
         "band3_vat": null,
         "band1_price_range": null,
-        "band2_price_range": null,
-        "price": "2.00",
-        "country": [
-            5
-        ]
+        "band2_price_range": null
     }
 },
 {
     "model": "shop.product",
     "pk": 7,
     "fields": {
-        "name": "Eggs",
-        "base_vat": null,
-        "band1_vat": "12.50",
-        "band2_vat": "15.00",
-        "band3_vat": "20.00",
-        "band1_price_range": "20.00",
-        "band2_price_range": "100.00",
-        "price": "2.50",
-        "country": [
-            2
-        ]
+        "country": 4,
+        "name": "Milk",
+        "base_vat": "5.00",
+        "flat_vat": null,
+        "first_tax_free_amount": null,
+        "band1_vat": "0.00",
+        "band2_vat": null,
+        "band3_vat": null,
+        "band1_price_range": "2.00",
+        "band2_price_range": null
     }
 },
 {
     "model": "shop.product",
     "pk": 8,
     "fields": {
-        "name": "Wine",
-        "base_vat": "10.00",
+        "country": 4,
+        "name": "Bread",
+        "base_vat": "5.00",
+        "flat_vat": null,
+        "first_tax_free_amount": null,
         "band1_vat": null,
         "band2_vat": null,
         "band3_vat": null,
         "band1_price_range": null,
-        "band2_price_range": null,
-        "price": "12.00",
-        "country": [
-            2
-        ]
+        "band2_price_range": null
     }
 },
 {
     "model": "auth.user",
     "pk": 1,
     "fields": {
-        "password": "pbkdf2_sha256$30000$MhPAp8XYoIJo$cE/82+kjOYxRVSgv/YlUEaEUJu4gnq0/OB4jD9MZS+Y=",
-        "last_login": "2018-02-13T14:22:33.960Z",
+        "password": "pbkdf2_sha256$30000$wTV3HJgSaSJG$5Bp2NwXCY20JS2jVnaxkZ7QbL6v9MOOYEMgVPRgMbpU=",
+        "last_login": "2018-02-14T13:08:21.856Z",
         "is_superuser": true,
         "username": "davidfelce",
         "first_name": "",
         "last_name": "",
-        "email": "davefelce@gmail.com",
+        "email": "d@g.com",
         "is_staff": true,
         "is_active": true,
-        "date_joined": "2018-02-13T14:22:28.901Z",
+        "date_joined": "2018-02-14T13:08:13.444Z",
         "groups": [],
         "user_permissions": []
     }
 },
 {
     "model": "sessions.session",
-    "pk": "t209ri96fpw24dy9fycil0xd5onxea1e",
+    "pk": "tez4ylbhhb9v30eg2cbkcmeumqwbw3kq",
     "fields": {
-        "session_data": "MDYxZWNiNWRhMDhkYWNkZmQyM2E3ZmIxZDEyNzFmNzUwZWMwMDU3Mzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6IjEiLCJfYXV0aF91c2VyX2hhc2giOiI3Mzc0NGU4NWQ1NjQ1YmU0NGMzOWYwZGQyYWI1NTc5YTFkY2YwYWU3In0=",
-        "expire_date": "2018-02-27T14:22:33.966Z"
+        "session_data": "ZDNhNjRjYzljZTJkZGRlYjFiNjdjY2E1ZTlhNTRlNDkxY2U3Y2U3Yjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiYjI1ZmJkNTlkMDliYWQ4ODM5ODVkZjZiNGNkYjFjZTA4MjE4YjNhOSIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
+        "expire_date": "2018-02-28T13:08:21.862Z"
     }
 },
 {
     "model": "admin.logentry",
     "pk": 1,
     "fields": {
-        "action_time": "2018-02-13T14:38:40.643Z",
+        "action_time": "2018-02-14T13:08:53.216Z",
         "user": [
             "davidfelce"
         ],
@@ -239,7 +231,7 @@
     "model": "admin.logentry",
     "pk": 2,
     "fields": {
-        "action_time": "2018-02-13T14:39:17.763Z",
+        "action_time": "2018-02-14T13:09:00.790Z",
         "user": [
             "davidfelce"
         ],
@@ -257,7 +249,7 @@
     "model": "admin.logentry",
     "pk": 3,
     "fields": {
-        "action_time": "2018-02-13T14:41:00.494Z",
+        "action_time": "2018-02-14T13:09:28.113Z",
         "user": [
             "davidfelce"
         ],
@@ -266,7 +258,7 @@
             "country"
         ],
         "object_id": "1",
-        "object_repr": "Germany",
+        "object_repr": "UK",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
@@ -275,7 +267,7 @@
     "model": "admin.logentry",
     "pk": 4,
     "fields": {
-        "action_time": "2018-02-13T14:42:25.562Z",
+        "action_time": "2018-02-14T13:09:41.214Z",
         "user": [
             "davidfelce"
         ],
@@ -284,7 +276,7 @@
             "country"
         ],
         "object_id": "2",
-        "object_repr": "UK",
+        "object_repr": "Germany",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
@@ -293,7 +285,7 @@
     "model": "admin.logentry",
     "pk": 5,
     "fields": {
-        "action_time": "2018-02-13T14:45:13.297Z",
+        "action_time": "2018-02-14T13:10:12.708Z",
         "user": [
             "davidfelce"
         ],
@@ -311,7 +303,7 @@
     "model": "admin.logentry",
     "pk": 6,
     "fields": {
-        "action_time": "2018-02-13T14:45:23.757Z",
+        "action_time": "2018-02-14T13:10:25.978Z",
         "user": [
             "davidfelce"
         ],
@@ -320,7 +312,7 @@
             "country"
         ],
         "object_id": "4",
-        "object_repr": "Alaska",
+        "object_repr": "Colorado",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
@@ -329,7 +321,7 @@
     "model": "admin.logentry",
     "pk": 7,
     "fields": {
-        "action_time": "2018-02-13T14:48:43.830Z",
+        "action_time": "2018-02-14T13:12:43.015Z",
         "user": [
             "davidfelce"
         ],
@@ -338,7 +330,7 @@
             "product"
         ],
         "object_id": "1",
-        "object_repr": "Eggs",
+        "object_repr": "Bread",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
@@ -347,7 +339,25 @@
     "model": "admin.logentry",
     "pk": 8,
     "fields": {
-        "action_time": "2018-02-13T14:52:01.691Z",
+        "action_time": "2018-02-14T13:12:52.062Z",
+        "user": [
+            "davidfelce"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "1",
+        "object_repr": "Bread",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"country\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2018-02-14T13:13:32.235Z",
         "user": [
             "davidfelce"
         ],
@@ -363,9 +373,9 @@
 },
 {
     "model": "admin.logentry",
-    "pk": 9,
+    "pk": 10,
     "fields": {
-        "action_time": "2018-02-13T14:54:20.572Z",
+        "action_time": "2018-02-14T13:16:48.645Z",
         "user": [
             "davidfelce"
         ],
@@ -374,24 +384,6 @@
             "product"
         ],
         "object_id": "3",
-        "object_repr": "Beer",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 10,
-    "fields": {
-        "action_time": "2018-02-13T14:55:04.080Z",
-        "user": [
-            "davidfelce"
-        ],
-        "content_type": [
-            "shop",
-            "product"
-        ],
-        "object_id": "4",
         "object_repr": "Bread",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
@@ -401,43 +393,25 @@
     "model": "admin.logentry",
     "pk": 11,
     "fields": {
-        "action_time": "2018-02-13T14:56:22.305Z",
+        "action_time": "2018-02-14T13:17:19.145Z",
         "user": [
             "davidfelce"
         ],
         "content_type": [
             "shop",
-            "country"
+            "product"
         ],
         "object_id": "4",
-        "object_repr": "Alaska",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 12,
-    "fields": {
-        "action_time": "2018-02-13T14:57:26.860Z",
-        "user": [
-            "davidfelce"
-        ],
-        "content_type": [
-            "shop",
-            "country"
-        ],
-        "object_id": "5",
-        "object_repr": "Colorado",
+        "object_repr": "Wine",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
 },
 {
     "model": "admin.logentry",
-    "pk": 13,
+    "pk": 12,
     "fields": {
-        "action_time": "2018-02-13T15:04:09.826Z",
+        "action_time": "2018-02-14T13:19:00.331Z",
         "user": [
             "davidfelce"
         ],
@@ -446,16 +420,16 @@
             "product"
         ],
         "object_id": "5",
-        "object_repr": "Milk",
+        "object_repr": "Beer",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
 },
 {
     "model": "admin.logentry",
-    "pk": 14,
+    "pk": 13,
     "fields": {
-        "action_time": "2018-02-13T15:05:34.143Z",
+        "action_time": "2018-02-14T13:29:10.750Z",
         "user": [
             "davidfelce"
         ],
@@ -471,9 +445,9 @@
 },
 {
     "model": "admin.logentry",
-    "pk": 15,
+    "pk": 14,
     "fields": {
-        "action_time": "2018-02-13T15:11:44.917Z",
+        "action_time": "2018-02-14T13:30:06.095Z",
         "user": [
             "davidfelce"
         ],
@@ -482,34 +456,16 @@
             "product"
         ],
         "object_id": "7",
-        "object_repr": "Eggs",
+        "object_repr": "Milk",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
 },
 {
     "model": "admin.logentry",
-    "pk": 16,
+    "pk": 15,
     "fields": {
-        "action_time": "2018-02-13T15:13:57.564Z",
-        "user": [
-            "davidfelce"
-        ],
-        "content_type": [
-            "shop",
-            "product"
-        ],
-        "object_id": "7",
-        "object_repr": "Eggs",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"band3_vat\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 17,
-    "fields": {
-        "action_time": "2018-02-13T15:15:02.331Z",
+        "action_time": "2018-02-14T13:30:58.396Z",
         "user": [
             "davidfelce"
         ],
@@ -518,9 +474,45 @@
             "product"
         ],
         "object_id": "8",
-        "object_repr": "Wine",
+        "object_repr": "Bread",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2018-02-14T16:47:50.060Z",
+        "user": [
+            "davidfelce"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "1",
+        "object_repr": "Bread",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"first_tax_free_amount\", \"band1_vat\", \"band1_price_range\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2018-02-14T16:51:48.586Z",
+        "user": [
+            "davidfelce"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "1",
+        "object_repr": "Bread",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"base_vat\"]}}]"
     }
 }
 ]
